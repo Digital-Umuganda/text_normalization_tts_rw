@@ -26,9 +26,11 @@ classify = pynini.Far(classify_far_file, mode="r")["TOKENIZE_AND_CLASSIFY"]
 verbalize = pynini.Far(verbalize_far_file,mode="r")["ALL"]
 
 classes = apply_fst(text,classify)
-# print(classes)
+# print("original: ",classes)
 # print("\n====================================\n")
-# print("we are here")
+# classes = classes.replace("'"," ")
+# print("processed: ",classes)
+# print("\nverbalizing")
 try:
     print(apply_fst(classes,verbalize))
     # print("\n******************************************\n")
