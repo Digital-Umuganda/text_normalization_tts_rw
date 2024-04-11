@@ -26,12 +26,12 @@ classify = pynini.Far(classify_far_file, mode="r")["TOKENIZE_AND_CLASSIFY"]
 verbalize = pynini.Far(verbalize_far_file,mode="r")["ALL"]
 
 classes = apply_fst(text,classify)
-print(classes)
-print("\n====================================\n")
-print("we are here")
+# print(classes)
+# print("\n====================================\n")
+# print("we are here")
 try:
     print(apply_fst(classes,verbalize))
-    print("\n******************************************\n")
-    print("and then we are here")
+    # print("\n******************************************\n")
+    # print("and then we are here")
 except Exception as E:
     print(E)
