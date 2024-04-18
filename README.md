@@ -8,8 +8,7 @@ python text_normalization.py -t "byatangiye 12:02 haje abantu 2000"
 ```
 pip install kinya_tn
 ```
-
-### python package usage
+To import it in python run the following:
 ```
 from kinya_tn import text_normalization
 
